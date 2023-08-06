@@ -1,0 +1,171 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Roboto:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {font-family:"Sans Poster Bold JL";src:url("/fonts/Sanspstb.eot") format("eot"),url("/fonts/Sanspstb.woff") format("woff"),url("/fonts/Sanspstb.ttf") format("truetype"),url("/fonts/Sanspstb.svg") format("svg");font-weight:normal;font-style:normal;}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    background-color: #272829;
+    color: #eee;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  a {
+    color: #eee;
+    text-decoration: none;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #111;
+    padding: 20px;
+
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  /* Hero section styles */
+  #hero {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .hero-content p {
+    font-size: 21px;
+    font-family: 'Edu SA Beginner', sans-serif;
+
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #111;
+    border-radius: 4px;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Updated transition */
+  }
+  
+  .btn:hover {
+    transform: translate3d(0, -5px, 0); /* Updated transform */
+  }
+  
+  /* About section styles */
+  #about {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #000000;
+
+  }
+  
+  #about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Projects section styles */
+  #projects {
+    background-color: #333;
+    padding: 80px 0;
+    text-align: center;
+
+  }
+  #ProjectsCont{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #projects h2 {
+    font-size:32px;
+    margin-bottom: 20px;
+    color: #eee;
+    font-family: 'Sans Poster Bold JL', sans-serif;
+  }
+  
+  .project {
+    margin-bottom: 40px;
+  }
+  
+  .project img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+  }
+  
+  .project h3 {
+    width: 200px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #eee;
+    
+  }
+  
+  .project p {
+    color: #eee;
+    width: 180px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Contact section styles */
+  #contact {
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  
+  #contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #eee;
+  }
+  .contactimg{
+    width: 100px;
+    background-color: #eee;
+    border-radius: 100px;
+    margin-top: 60px;
+  }
+
+
+#contact>div{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 60px;
+}
+.zoom {
+    transition: transform .2s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
